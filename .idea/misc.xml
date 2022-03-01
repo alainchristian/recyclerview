@@ -4,7 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Alain/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.25" />
+<<<<<<< HEAD
         <entry key="..\:/Users/Alain/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/row_item.xml" value="0.33" />
+=======
+        <entry key="..\:/Users/Alain/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/activity_recycler.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Alain/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/custom_row_item.xml" value="0.25" />
+        <entry key="..\:/Users/Alain/AndroidStudioProjects/RecyclerView/app/src/main/res/layout/row_item.xml" value="0.22" />
+        <entry key="..\:/Users/Alain/AndroidStudioProjects/RecyclerView/app/src/main/res/menu/mymenu.xml" value="0.1814814814814815" />
+>>>>>>> e1f7307 (Recycler view project)
       </map>
     </option>
   </component>

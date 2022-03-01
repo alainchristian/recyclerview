@@ -41,6 +41,7 @@ public class MyRecAdapter extends RecyclerView.Adapter<MyRecAdapter.MyViewHolder
     public int getItemCount() {
         return mList.size();
     }
+
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView tvPhone;
         public MyViewHolder(@NonNull View itemView) {

@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:id="@+id/tvPhone"
-        android:text="iPhone"
+        android:text="@string/iphone"
         android:textSize="20sp"
         android:layout_margin="10dp"
         android:padding="8dp"
