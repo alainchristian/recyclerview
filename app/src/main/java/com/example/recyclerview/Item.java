@@ -6,6 +6,10 @@ public class Item {
     float itemPrice;
     String itemDescr;
 
+
+
+
+
     public Item(int itemImage, String itemName, float itemPrice, String itemDescr) {
         this.itemImage = itemImage;
         this.itemName = itemName;

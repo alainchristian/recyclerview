@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerView">
         <activity
+            android:name=".ItemDeatails"
+            android:exported="false" />
+        <activity
             android:name=".RecyclerActivity"
             android:exported="false" />
         <activity

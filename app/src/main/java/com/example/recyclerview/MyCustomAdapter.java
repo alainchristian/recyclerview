@@ -1,6 +1,7 @@
 package com.example.recyclerview;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,10 +38,18 @@ public class MyCustomAdapter extends RecyclerView.Adapter<MyCustomAdapter.VH> {
         holder.tvName.setText(item.getItemName());
         holder.tvPrice.setText(""+item.getItemPrice());
         holder.tvDescription.setText(item.getItemDescr());
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, ""+item.getItemName()+"\n"+item.getItemPrice(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context,ItemDeatails.class);
+                intent.putExtra("image",item.getItemImage());
+                intent.putExtra("itemName",item.getItemName());
+                intent.putExtra("itemPrice",item.getItemPrice());
+                intent.putExtra("itemDescr",item.getItemDescr());
+                context.startActivity(intent);
+
+                //Toast.makeText(context, ""+item.getItemName()+"\n"+item.getItemPrice(), Toast.LENGTH_SHORT).show();
             }
         });
 

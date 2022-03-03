@@ -5,4 +5,7 @@
     <string name="add">Add</string>
     <string name="descr">You can add any description for your product to actrract more ad make user feel happy</string>
     <string name="iphone">iPhone</string>
+    <string name="apple">Apple</string>
+    <string name="item_descption">Item descption</string>
+    <string name="_300">300</string>
 </resources>
