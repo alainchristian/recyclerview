@@ -6,4 +6,14 @@
     <item android:title="@string/add"
         android:id="@+id/mnuAdd"
         />
+    <item
+        android:title="@string/add_student"
+        android:id="@+id/mnuAddStudent"
+
+        />
+    <item
+        android:title="View Students"
+        android:id="@+id/mnuViewStudent"
+
+        />
 </menu>
