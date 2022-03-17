@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -78,8 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void displayStudent() {
-
-
+        startActivity(new Intent(MainActivity.this,ShowStudent.class));
     }
 
     private void saveStudent() {
@@ -101,7 +101,17 @@ public class MainActivity extends AppCompatActivity {
                 String phone=stPhone.getText().toString();
                 String faculty = stFaculty.getText().toString();
                 String email =stStEmail.getText().toString();
-                dbHelper.addData(new Student(name,phone,faculty,email));
+                if (name.isEmpty()||phone.isEmpty()||faculty.isEmpty()||email.isEmpty()){
+                    Toast.makeText(MainActivity.this, "All fields are required", Toast.LENGTH_SHORT).show();
+                    stName.setError("Name is required");
+                    stFaculty.setError("Faculty is required");
+                    stPhone.setError("Phone is required");
+                    stStEmail.setError("Email is required");
+                    stName.requestFocus();
+                }
+                else{
+                    dbHelper.addData(new Student(name,phone,faculty,email));
+                }
             }
         });
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
